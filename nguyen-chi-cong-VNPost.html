@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vietnam Post</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img src="logo.png">
+	</div>
+	<div class="content">
+		<div id="nav">
+			<div>
+				<a href="#">HỆ THỐNG</a>
+			</div>
+			<div>
+				<a href="#">KÊ KHAI</a>
+			</div>
+			<div>
+				<a href="#">QUAN LÝ SỰ VỤ</a>
+			</div>
+			<div>
+				<a href="#">BÁO CÁO THỐNG KÊ</a>
+			</div>
+			<div>
+				<a href="#">QUAN LÝ BIÊN LAI</a>
+			</div>
+			<div>
+				<a href="#">TRA CỨU</a>
+			</div>
+		</div>
+		<div id="sibar">
+			<div id="toggle" onclick="move()">
+				<span></span>
+				<span></span>
+				<span></span>	
+			</div>
+			<a href="#" onclick="document.getElementById('danhmuc').style.visibility='visible'">Danh muc he thong</a>
+			<a href="#">Quan ly nguoi dung</a>
+			<ul>
+					<li><a href="#">Danh sách nhóm quyền</a></li>
+					<li><a href="#">Danh sách người dùng</a></li>
+			</ul>
+		</div>
+		<div id="danhmuc">
+			<div id="list">
+				<p>DANH MUC MẠNG LƯỚI</p>
+			</div>
+			<div id="search">
+				<div><p>Tìm kiếm: </p></div>
+				<div><input type="text" name=""></div>
+				<button>Tìm kiếm</button>
+			</div>
+			<div >
+				<a href="#" onclick="document.getElementById('buudienHN').style.visibility='visible';document.getElementById('tongcty').style.color = '#fcb71e'" id="tongcty">
+					<img src="folder.png">
+					<p>00 - Tổng công ty</p>
+				</a>
+				<a href="#"  onclick="document.getElementById('buudientt').style.visibility='visible';document.getElementById('buudienHN').style.color = '#fcb71e'" id="buudienHN">
+					<img src="folder.png">
+					<p>Bưu điện TP Hà Nội</p>
+				</a>
+				<a href="#" id="buudientt" onclick="document.getElementById('hoangmai').style.visibility='visible';document.getElementById('buudientt').style.color = '#fcb71e'">
+					<img src="folder.png">
+					<p>Bưu điện Trung tâm 6</p>
+				</a>
+				<a href="#" id="hoangmai" onclick="document.getElementById('info').style.visibility='visible';document.getElementById('hoangmai').style.color = '#fcb71e'">
+					<img src="folder.png">
+					<p>127060 - KHL Hoàng Mai</p>
+				</a>
+			</div>
+			
+		</div>
+		<div id="info">
+			<div id="tt">
+				<p>THÔNG TIN CHI TIẾT</p>
+			</div>
+			<div id="ma">
+				<label>Mã:</label>
+				<input type="text" name="127060">
+				<label>Tên:</label>
+				<input type="text" name="Nguyen Van A">
+			</div>
+			
+			<div id="diachi">
+				<label>Địa chỉ:</label>
+				<input type="text" name="Phường....">
+				<input type="text" name="Quận....">
+				<input type="text" name="Thành Phố Hà Nội....">
+				<input type="text" name="số nhà...." id="a">
+			</div>
+			<div id="sdt">
+				<label>Số điện thoại</label>
+				<input type="text" name="số điện thoại....">
+				<label>Số fax</label>
+				<input type="text" name="số fax....">
+			</div>
+			<div id="loai">
+				<label>Loại BC:</label>
+				<input type="text" name="KT2">
+				<label>Phương thức</label>
+				<input type="text" name="Điện tử">
+			</div>
+			<div id="work">
+				<label>Cơ quan BHXH:</label>
+				<input type="text" name="....">
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
